@@ -10,11 +10,10 @@ const Speciality_Menu = () => {
         <p className='sm:w-1/3 text-center text-sm ' >  simply browse through our extensive list of trusted doctors schedule your appointment hassle-free.</p>
         <div className='flex sm:justify-center gap-4 pt-5 w-full  overflow-scroll'>
             {specialityData.map((item,index)=>(
-              <Link key={index} >
-            <img className='w-16 sm:w-24 mb-2' src={item.image || "/default-doctor.jpg"} alt={`${item.speciality} doctor`} />
+              <Link onClick={()=>scrollTo(0,0)} key={index} className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500'>
+            <img className='w-16 sm:w-24 mb-2' src={item.image} alt={`${item.speciality} doctor`} />
                <p>{item.speciality}</p>
             </Link>
-
             ))}
         </div>
     </div>
