@@ -1,5 +1,5 @@
 import React from 'react'
-import Speciality_Menu from '../components/speciality_Menu'
+import Speciality_Menu from '../components/SpecialityMenu'
 import Headers from '../components/Header'
 import TopDoctors from '../components/TopDoctors'
 import Banner from '../components/Banner'
@@ -12,7 +12,7 @@ const Home = () => {
       <Speciality_Menu/>
       <TopDoctors/>
       <Banner/>   
-      <Footer/>
+      <Footer/> 
     </div>
   )
 }

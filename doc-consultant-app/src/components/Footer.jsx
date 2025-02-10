@@ -29,7 +29,7 @@ const Footer = () => {
                 </ul>
 
                 </div>
-                {/* copyright  text******************** */}
+                {/* copyright  text ******************** */}
 
 
             
