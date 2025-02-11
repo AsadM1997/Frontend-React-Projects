@@ -1,29 +1,31 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import { assets } from '../assets/assets'
-import { AppContext } from '../context/AppContext'
+import { AppContext } from '../context/AppContext';
 
-const doctors = () => {
+const Doctors = () => {
 
   const {speciality}=useParams()
-  const  {doctors}= useContext(AppContext)
-  console.log(speciality);
+  console.log("Speciality:",speciality);
+
+  const {doctors}= useContext(AppContext)
   
   return (
     <div>
-      <p>Browse through the doctors specialist.</p>
-      <div>
-        <div>
-        <p>General physician</p>
-        <p>Gynecologist</p>
-        <p>Dermatologist</p>
-        <p>Pediatricians</p>
-        <p>neurologist</p>
-        <p>Gastroenterologist</p>
-        </div>
-      </div>
+            <h1>{speciality ? `Doctors specialized in ${speciality}` : 'All Doctors'}</h1>
+            <p>Browse through  the doctors specialist.</p>
+            <div>
+              <div>
+                <p>General physician</p>
+                <p>Gynecologist</p>
+                <p>Dermatologist</p>
+                <p>Pediatricians</p>
+                <p>Neurologist</p>
+                <p>Gastroenterologist</p>
+              </div>
+            </div>
+
     </div>
   )
-} 
+}
 
-export default doctors  
+export default Doctors

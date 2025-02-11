@@ -1,5 +1,5 @@
 import React from 'react'
-import Speciality_Menu from '../components/SpecialityMenu'
+import SpecialityMenu from '../components/SpecialityMenu'
 import Headers from '../components/Header'
 import TopDoctors from '../components/TopDoctors'
 import Banner from '../components/Banner'
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Headers/>
-      <Speciality_Menu/>
+      <SpecialityMenu/>
       <TopDoctors/>
       <Banner/>   
       <Footer/> 
