@@ -6,7 +6,7 @@ import { AppContext } from '../context/AppContext'
 
 const TopDoctors = () => {
 
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const { doctors } = useContext(AppContext);
 
   return (
