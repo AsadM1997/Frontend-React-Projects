@@ -110,12 +110,14 @@ const Appointments = () => {
         {/* ------- Booking slots ----------- */}
      <div className="sm:ml-72 sm:pl-4 mt-4 font-medium text-gray-700">
       <p>Booking slots</p>
-      docSlots.length && docSlots.map((item,index)=>(
+      {
+         docSlots.length && docSlots.map((item,index)=>(
         <div key={index}>
           <p>{item[0] && daysOfWeek[days[0].dateTime.getDay()]}</p>
           <p>{item[0] && item[0].dateTime.getDate()}</p>
         </div>
-      ))
+      ))}
+     
      </div>
       </div>
     )
