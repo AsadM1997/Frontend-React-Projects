@@ -29,7 +29,7 @@ const Login = () => {
         <input  className='border border-zinc-300 rounded w-full p-2 mt-1 '  type='password' onChange={(e)=>setPassword(e.target.name)} value={password} required/>
        </div>
 
-      <button className='bg-primary text-white'>{state === 'Singn Up' ? 'create Account' : 'Login'}</button>
+      <button className='bg-primary text-white w-full py-2 rounded-md text-base'>{state === 'Singn Up' ? 'create Account' : 'Login'}</button>
       <p>Already have an account? <a>Login here</a></p>
       </div>
     </form>
