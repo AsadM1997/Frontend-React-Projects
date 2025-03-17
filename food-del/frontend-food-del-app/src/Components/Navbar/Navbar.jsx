@@ -14,7 +14,7 @@ const Navbar = () => {
             <li onClick={()=>setMenu('home')} className={menu==="home"?"active":""}>home</li>
             <li onClick={()=>setMenu('menu')} className={menu==="menu"?"active":""}>menu</li>
             <li onClick={()=>setMenu('mobile-app')} className={menu==="mobile-app"?"active":""}>mobile-app</li>
-            <l onClick={()=>setMenu('Contact-us')} className={menu==="Contact-us"?"active":""}>Contact-us</l>
+            <li onClick={()=>setMenu('Contact-us')} className={menu==="Contact-us"?"active":""}>Contact-us</li>
         </ul>
         <div className='navbar-right'>
             <img src={assets.search_icon}/>
